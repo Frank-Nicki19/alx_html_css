@@ -32,8 +32,8 @@ aside {
 
 /* Basic styling for visualization */
 header, footer {
-    background-color: #333;
-    color: white;
+    background-color: #9a9a9a;
+    color: rgb(2, 2, 2);
     text-align: center;
     padding: 1em;
 }

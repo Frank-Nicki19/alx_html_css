@@ -1,0 +1,45 @@
+/* Apply flexbox to body and main */
+body {
+    display: flex;
+    flex-direction: column; /* Step 2: Arrange children of <body> vertically */
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Ensure full viewport height */
+}
+
+main {
+    display: flex;
+    flex-direction: row; /* Step 3: Arrange children of <main> horizontally */
+    flex: auto; /* Step 4: Automatically adjust height and width of <main> */
+    overflow-x: hidden; /* Hide horizontal overflow */
+}
+
+/* Ensure <main> tag keeps automatic height and width */
+main {
+    flex: auto;
+}
+
+/* Set content width distribution */
+article {
+    flex: 2; /* Take 2/3 of width */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+aside {
+    flex: 1; /* Take 1/3 of width */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Basic styling for visualization */
+header, footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+article, aside {
+    padding: 1em;
+    border: 1px solid #ccc;
+    margin: 1em;
+}

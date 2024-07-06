@@ -23,8 +23,8 @@
   
   /* -------------------------------------------Nav Styles-------------------------------------------------- */
   nav {
-    padding-top: 10px;
-    padding-bottom: 10px; 
+    padding-top: 5px;
+    padding-bottom: 5px; 
     background: url(assets/headphones_hero_1.jpg);
 }
   
@@ -33,7 +33,7 @@
     align-items: center;
     justify-content: space-between;
     width: 85%;
-    margin-top: 10px;
+    margin-top: 0px;
 }
   
   .navLink {
@@ -46,7 +46,7 @@
   }
   
   .navLink a:hover {
-    color: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 101, 101, 1);
     cursor: pointer;
   }
   
@@ -98,7 +98,33 @@
     font-size: 1em;
     display: inline-block; 
     width: auto; 
+    opacity: 0.9;
 }
+.middle-section {
+  display: flex; /* Use Flexbox to arrange items horizontally */
+  justify-content: space-around; /* Space out the items evenly */
+  align-items: center; /* Center the items vertically */
+  padding: 20px;
+  gap: 20px; /* Add space between each item */
+}
+
+.middle-section div {
+  text-align: center; /* Center the text within each div */
+}
+
+.middle-section img {
+  display: block;
+  margin: 0 auto 10px; /* Center the image and add some margin below it */
+  max-width: 100px; /* Adjust the size of the images if necessary */
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.middle-section p {
+  font-size: 14px; /* Adjust the font size if necessary */
+  color: #333; /* Adjust the text color if necessary */
+}
+
   /* -------------------------------------------Button Styles-------------------------------------------------- */
   
   button:hover {
